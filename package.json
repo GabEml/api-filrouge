@@ -1,0 +1,20 @@
+{
+  "name": "api-filrouge",
+  "version": "1.0.0",
+  "description": "api pour le projet file rouge",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3",
+    "stripe": "^8.191.0"
+  }
+}
