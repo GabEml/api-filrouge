@@ -1,7 +1,7 @@
 {
-  "name": "api-filrouge",
+  "name": "webservice",
   "version": "1.0.0",
-  "description": "api pour le projet file rouge",
+  "description": "api pour le projet webservice",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

@@ -15,8 +15,9 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
 
 app.use("/users", require("./routes/user.js"));
-app.use("/invoices", require("./routes/invoice.js"));
-app.use("/products", require("./routes/product.js"));
+app.use("/appointments", require("./routes/appointment.js"));
+app.use("/organisations", require("./routes/organisation.js"));
+app.use("/customers", require("./routes/customer.js"));
 
 const port = process.env.PORT || 3000;
 

@@ -8,13 +8,13 @@ class userRepository {
         return connection.execute(`SELECT * FROM user WHERE id = ${userId};`);
     }
     static save(user){
-         let sql="INSERT INTO user (name, firstname, email, password) VALUES ('"+ user.name+"', '"+user.firstname+"', '"+user.email+"', '"+user.password+"');";
+         let sql="INSERT INTO user (lastname, firstname, email, date, id_creator) VALUES ('"+ user.lastname+"', '"+user.firstname+"', '"+user.email+"', '"+user.date+"', '"+user.id_creator+"');";
         return connection.execute(sql);
     }
-    static update(userId, user){
-         let sql=`UPDATE user SET name='${user.name}', firstname='${user.firstname}', email='${user.email}', password='${user.password}' WHERE id=${userId};`;
+    /*static update(userId, user){
+         let sql=`UPDATE user SET lastname='${user.lastname}', firstname='${user.firstname}', email='${user.email}', date='${user.date}' WHERE id=${userId};`;
         return connection.execute(sql);
-    }
+    }*/
     static delete(userId){
         return connection.execute(`DELETE FROM user WHERE id=${userId};`);
     }
